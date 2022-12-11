@@ -7,7 +7,7 @@ import java.util.Arrays;
 // 연속된 수 num개를 더한 값이 total이 될 때,
 // 정수 배열을 오름차순으로 담아 return하도록 solution함수를 완성해보세요.
 
-class Solution { // 연속된 수의 합
+class Solution1 { // 연속된 수의 합
     public int[] solution(int num, int total) {
         int[] answer = new int[num];
         
@@ -29,10 +29,10 @@ class Solution { // 연속된 수의 합
     } // solution
 } // class
 
-public class sum_consecutive_numbers {
+public class p1_sum_of_consecutive_numbers {
 
 	public static void main(String[] args) {
-		Solution solution = new Solution();
+		Solution1 solution = new Solution1();
 		solution.solution(3, 12);
 		// 12 = n  + (n - 1) + (n - 2)
 		// 12 = answer[0] + answer[1] + answer[2]
