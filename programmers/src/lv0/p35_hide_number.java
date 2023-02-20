@@ -9,15 +9,16 @@ class Solution35 {
     public int solution(String my_string) {
         int answer = 0;
         
-        // 숫자만 확인
+        // 분할
         String[] str = my_string.trim().split("[a-zA-Z]");
         
     	for(String s : str) {
-    		if (!s.isEmpty()) {
+    		if (!s.isEmpty()) { // 공백 제외
     			System.out.println(s);
     			answer += Integer.parseInt(s);
 			}
     	} // for-each
+    	
     	System.out.println(answer);
         
         return answer;
